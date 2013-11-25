@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET     /					        controllers.Application.index
+GET     /demo-client/*file          controllers.Assets.at(path="/public", file)
+
+GET		/departments				controllers.Application.listDepartments
+POST	/departments 				controllers.Application.insertDepartment
+PUT		/departments/:id 			controllers.Application.updateDepartment(id: Long)
+DELETE	/departments/:id			controllers.Application.deleteDepartment(id: Long)
+
+GET		/employees					controllers.Application.listEmployees
+POST	/employees 					controllers.Application.insertEmployee
+PUT		/employees/:id 				controllers.Application.updateEmployee(id: Long)
+DELETE	/employees/:id				controllers.Application.deleteEmployee(id: Long)
+
+GET		/municipalities				controllers.Application.listMunicipalities
+
