@@ -1,1 +1,7 @@
-Simple demo application built with Play, Scala, Slick, a relational database, and a Sencha ExtJS frontend.
+Simple demo application built with Play Framework 2.2.1, Scala, Slick, an SQL database, and a Sencha ExtJS frontend.
+
+Running locally requires Play 2.2.1. Enable the h2 "mem" database from application.conf to run the application in an in-memory H2 instance. Execute "play run" and navigate to http://localhost:9000 to visit the application.
+
+The client application has been pre-built to folder demo-client. IF you want to debug, develop, or rebuild the client, you will need to download and extract ExtJS 4.2.1 to /demo-client/ext and have Sencha CMD utilities installed on your machine.
+
+In the actual application, start by creating departments first (in the grid on the right), then go on and add some employees to those departments. Municipality is available by default and includes all Finnish municipalities as of 2013. Have fun! :)
