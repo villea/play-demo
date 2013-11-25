@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/foo -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.url=${CLEARDB_DATABASE_URL} -Ddb.default.driver=com.mysql.jdbc.Driver
+web: target/universal/stage/bin/play-demo -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.url=${CLEARDB_DATABASE_URL} -Ddb.default.driver=com.mysql.jdbc.Driver
